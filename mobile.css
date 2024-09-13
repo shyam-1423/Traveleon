@@ -1,0 +1,416 @@
+/*===============================================responsive ===================================*/
+@media (min-width: 320px) and (max-width: 480px) {
+    #footer {
+        padding-left: 10%;
+    }
+
+    #QL h3 {
+        padding-top: 5%;
+    }
+
+    #para {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #para2 {
+        font-size: 17px;
+        font-weight: 400
+    }
+
+
+    #us {
+        height: 120px;
+        width: 100%;
+        font-size: 20px;
+        line-height: 25px;
+        margin-top: 20px;
+    }
+
+    #beauty {
+        height: 80px;
+        width: 100%;
+        font-size: 20px;
+        line-height: 12px;
+        margin-top: 0px;
+    }
+
+    #world {
+        height: 80px;
+        width: 100%;
+        font-size: 20px;
+        line-height: 12px;
+        margin-top: 0px;
+    }
+
+
+    #travel {
+        height: 40vh;
+        background-image: url(Images/trip.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        font-weight: bold;
+        box-shadow: unset;
+        background-position: center;
+    }
+
+    #box1 {
+        width: 80%;
+        height: 300px;
+
+    }
+
+
+    #box2 {
+        width: 80%;
+        height: 300px;
+
+    }
+
+    #box3 {
+        width: 80%;
+        height: 300px;
+
+    }
+
+    #box4 {
+        width: 80%;
+        height: 300px;
+
+    }
+
+    #boxes {
+        bottom: 0px;
+        gap: 20px;
+    }
+
+    #to {
+        font-size: 20px;
+        line-height: 40px;
+        color: #4da528;
+        font-weight: bold;
+        font-family: "Montserrat Roman";
+        height: 100px;
+        width: 100%;
+    }
+
+    #section1 {
+        width: 100%;
+
+    }
+
+    #section2 {
+        width: 100%;
+
+    }
+
+    #like {
+
+        font-size: 15px;
+        line-height: 15px;
+        color: #000000;
+        font-weight: 700;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    #type {
+        text-align: center;
+        width: 100%;
+        font-size: 15px;
+        line-height: 17px;
+        font-weight: 600
+    }
+
+    #page2 {
+
+        font-size: 50px;
+        font-family: "MontserratRoman";
+        color: rgb(77, 165, 40);
+        font-weight: bold;
+        line-height: 1;
+        left: 7519.5px;
+        top: 571.5px;
+        z-index: 560;
+        text-align: center;
+        padding-right: 70px;
+        height: 110px;
+        padding-top: 20px;
+
+
+
+    }
+
+    #button button {
+        height: 25px;
+        width: 90%;
+        position: relative;
+        top: 10px;
+        right: 140px;
+        color: white;
+        background-color: #4da528;
+        font-weight: 500;
+        font-size: 12px;
+        border: none;
+    }
+
+    #sun img {
+        margin-top: 20px;
+        height: 40%;
+        width: 100%;
+        color: white;
+
+    }
+
+    #sunbox {
+        margin-top: 30px;
+        width: 100%;
+        height: 80%;
+    }
+
+    #mapimg {
+        height: 60PX;
+
+    }
+
+    #mapdes {
+        font-size: 15px;
+        width: 100%;
+
+    }
+
+    #camerabox img {
+        height: 60PX;
+
+    }
+
+    #camerades {
+        font-size: 15px;
+        width: 100%;
+
+    }
+
+    #pursebox img {
+        height: 60PX;
+
+    }
+
+    #purseboxdes {
+        font-size: 15px;
+        width: 100%;
+
+    }
+
+    #travelbox img {
+        height: 90PX;
+
+    }
+
+    #travelboxdes {
+        font-size: 15px;
+        width: 100%;
+
+    }
+
+    #mobilebox img {
+        height: 65PX;
+
+    }
+
+    #mobileboxdes {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    #transportbox img {
+        height: 65PX;
+    }
+
+    #transportdes {
+        font-size: 15px;
+    }
+
+    #plane {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+
+
+    }
+
+    #plane img {
+        height: 80px;
+    }
+
+    #save {
+        font-size: 20px;
+        /* line-height: 40px; */
+        color: #000000;
+        font-weight: 400;
+        font-family: "Montserrat";
+        text-align: center;
+        width: 100%;
+    }
+
+    #tour {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        color: #4da528;
+        font-weight: 600;
+        font-family: "Montserrat";
+        margin-top: 18px;
+        height: 50px;
+        
+    }
+
+    #des {
+        font-size: 13px;
+        color: #000000;
+        font-family: "Montserrat";
+        font-weight: 600;
+        text-align: center;
+        margin-top: 15px;
+
+    }
+
+    #bag img {
+        height: 80px;
+    }
+
+    #bag {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+
+
+    }
+
+    #camping {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+
+        color: #4da528;
+        font-weight: 600;
+        font-family: "Montserrat";
+        margin-top: 20px;
+
+    }
+
+    #des1 {
+        font-size: 13px;
+        margin-top: 18px;
+
+        width: 100%;
+        line-height: 24px;
+        color: #000000;
+        font-weight: 600;
+        font-family: "Montserrat";
+        text-align: center;
+
+    }
+
+    #compaas {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+
+
+    }
+
+    #compaas img {
+        height: 80px;
+    }
+
+    #adventure {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+
+        color: #4da528;
+        font-weight: 600;
+        font-family: "Montserrat";
+        margin-top: 20px;
+
+    }
+    #des2 {
+        font-size: 13px;
+        margin-top: 18px;
+
+        width: 100%;
+        line-height: 24px;
+        color: #000000;
+        font-weight: 600;
+        font-family: "Montserrat";
+        text-align: center;
+
+    }
+    #camera img{
+        height: 80px;
+    }
+    #des3 {
+        font-size: 13px;
+        margin-top: 18px;
+
+        width: 100%;
+        line-height: 24px;
+        color: #000000;
+        font-weight: 600;
+        font-family: "Montserrat";
+        text-align: center;
+
+    }
+    #activity {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        height: 0px;
+        color: #4da528;
+        font-weight: 600;
+        font-family: "Montserrat";
+        margin-top: 20px;
+
+    }
+    #last {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-top: 30px;
+        flex-wrap: wrap;
+    }
+    #save{
+        width: 100%;
+        text-align: justify;
+        font-size: 18px;
+    }
+    #cloud{
+        width: 100%;
+    }
+    #cloud img{
+        width: 100%;
+        padding-left: 1%;
+    }
+    #to{
+        width: 100%;
+        font-size: 24px;
+        text-align: center;
+    }
+}

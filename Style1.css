@@ -1,0 +1,869 @@
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+#navigation {
+    width: 100%;
+    background-color: #f2f8fc;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    padding-left: 15%;
+}
+
+.navbar-brand img {
+    height: 100px;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+#navbar {
+    position: absolute;
+    top: 10;
+    left: 35%;
+}
+
+.nav-link1 {
+    padding-right: 15%;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Montserrat";
+    word-spacing: 20px;
+}
+
+.nav-link.active {
+    color: #4da528 !important;
+    font-weight: bold;
+    /* Add this line to make the underline visible on active links */
+    transform: scaleX(1);
+}
+
+.nav-link {
+    position: relative;
+    overflow: hidden;
+    /* Add overflow: hidden; to contain the hover effect */
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #4da528;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #4da52831;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    /* Expand the background on hover */
+}
+
+.nav-link:hover {
+    color: #4da528;
+    /* Add a color change on hover */
+}
+
+/* Center the logo on mobile view */
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Position logo on the left on larger screens */
+@media (min-width: 992px) {
+    .navbar-brand {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-right: auto;
+    }
+
+    /* Center the nav links in desktop view */
+    .navbar-nav {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .offcanvas-body .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        /* Ensure links are in a row */
+        justify-content: center;
+        /* Center the links horizontally */
+        gap: 30px;
+        /* Space between links, adjust as needed */
+    }
+
+    .offcanvas-body .nav-item {
+        margin: 0;
+        /* Ensure no extra margin on nav items */
+    }
+
+    .offcanvas-body .nav-link {
+        display: block;
+        /* Ensure links are displayed as block elements */
+        font-size: 18px;
+        /* Adjust font size as needed */
+    }
+}
+
+/* ===================================================page1================================ */
+.first_section {
+    position: relative;
+    height: 70vh;
+    /* Full viewport height */
+    overflow: hidden;
+    /* Hide any overflow from the video */
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the video covers the entire section */
+    z-index: -1;
+    /* Ensures the video is behind the content */
+}
+
+#page1 {
+    z-index: 1;
+    /* Bring the text content on top of the video */
+    color: white;
+    /* Ensure the text is readable on top of the video */
+    font-size: 3rem;
+    /* Adjust the size as needed */
+}
+
+h1 {
+    font-weight: 800;
+    padding-top: 25%;
+}
+/* <!--===================================== section2=============================================== --> */
+#page2 h2{
+    font-size: 40px;
+    color: rgb(77, 165, 40);
+    font-weight: 700;
+    text-align: center;
+    height: 200px;
+}
+
+/* ============================================travel========================= */
+
+#travel {
+    height: 100vh;
+    background-image: url(Images/trip.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    font-weight: bold;
+    box-shadow: unset;
+    background-position: center;
+}
+/*================================= travel========================= */
+.type{
+    padding-top: 17%;
+}
+#typewriter, #typewriter-second {
+    font-size: 2rem;
+    color: #4da528;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    padding-left: 13%;
+}
+
+#typewriter {
+    width: 0;
+    animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+#typewriter-second {
+    width: 0;
+    padding-left: 33%; /* Add padding left */
+    animation: typingSecond 4s steps(40, end) 4s, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes typingSecond {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    50% { border-color: transparent; }
+}
+
+#us {
+    height: 350px;
+    width: 80%;
+    font-size: 40px;
+    line-height: 25px;
+    color: #4da528;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#beauty {
+    height: 200px;
+    width: 80%;
+    font-size: 58px;
+    line-height: 25px;
+    color: white;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: center;
+    margin-right: 10%;
+
+
+}
+
+#world {
+    height: 100px;
+    width: 80%;
+    font-size: 58px;
+    line-height: 25px;
+    color: white;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: center;
+
+}
+
+#boxes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 800;
+    position: relative;
+    bottom: 200px;
+    flex-wrap: wrap;
+}
+
+#box1 {
+    height: 400px;
+    background-color: white;
+    width: 22%;
+    box-shadow: 0px 0px 10px #000;
+}
+
+#box2 {
+    height: 400px;
+    background-color: white;
+    width: 22%;
+    box-shadow: 0px 0px 10px #000;
+
+}
+
+#box3 {
+    height: 400px;
+    background-color: white;
+    width: 22%;
+    box-shadow: 0px 0px 10px #000;
+
+}
+
+#box4 {
+    height: 400px;
+    background-color: white;
+    width: 22%;
+
+    box-shadow: 0px 0px 10px #000;
+
+}
+
+#plane {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+
+
+}
+
+#tour {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #4da528;
+    font-weight: 600;
+    font-family: "Montserrat";
+    height: 70px;
+}
+
+#des {
+    font-size: 15px;
+    color: #000000;
+    font-family: "Montserrat";
+    font-weight: 600;
+    text-align: center;
+
+}
+
+#bag {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+
+
+}
+
+#camping {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 70px;
+    color: #4da528;
+    font-weight: 600;
+    font-family: "Montserrat";
+
+}
+
+#des1 {
+    font-size: 15px;
+
+
+    width: 100%;
+    line-height: 24px;
+    color: #000000;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: center;
+
+}
+
+#compaas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+
+
+}
+
+
+#adventure {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 70px;
+    color: #4da528;
+    font-weight: 600;
+    font-family: "Montserrat";
+
+}
+
+#des2 {
+    font-size: 15px;
+
+
+    width: 100%;
+    line-height: 24px;
+    color: #000000;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: center;
+
+}
+
+#camera {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 150px;
+    color: #4da528;
+    font-weight: 600;
+    font-family: "Montserrat";
+
+}
+
+#activity {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 70px;
+    color: #4da528;
+    font-weight: 600;
+    font-family: "Montserrat";
+
+}
+
+#des3 {
+    font-size: 15px;
+
+
+    width: 100%;
+    line-height: 24px;
+    color: #000000;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: center;
+
+}
+
+#last {
+    /* height: 90vh; */
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#offer {
+    height: 700px;
+    width: 50%;
+
+}
+
+#cloud {
+    height: 700px;
+    width: 50%;
+
+}
+
+#cloud img {
+    height: 700px;
+    width: 80%;
+}
+
+#to {
+    font-size: 40px;
+    line-height: 50px;
+    color: #4da528;
+    font-weight: 700;
+    font-family: "Montserrat Roman";
+    height: 100px;
+}
+
+#save {
+    font-size: 22px;
+    line-height: 43px;
+    color: #000000;
+    font-weight: 500;
+    text-align: justify;
+    padding-top: 25px;
+    padding-right: 20px;
+    font-family: "Montserrat";
+}
+
+/*======================================================== section======================================================= */
+#section1 {
+    width: 50%;
+
+}
+
+#like {
+    font-size: 40px;
+    line-height: 75px;
+    color: #000000;
+    font-weight: 700;
+}
+
+#type {
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+#section2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#mapbox {
+    width: 33.33%;
+}
+
+#mapimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 71px;
+}
+
+#mapdes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    text-align: center;
+    font-weight: 500;
+
+}
+
+#section3 {
+    width: 33.33%;
+}
+
+#camerabox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#camerabox img {
+    height: 71px;
+}
+
+#camerades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#section4 {
+    width: 33.33%;
+}
+
+#pursebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pursebox img {
+    height: 71px;
+}
+
+#purseboxdes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#section5 {
+    width: 33.33%;
+
+}
+
+#travelbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#travelbox img {
+    height: 100px;
+    padding-top: 26px;
+
+}
+
+#travelboxdes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 500;
+    padding-top: 0px;
+}
+
+#section6 {
+    width: 33.33%;
+    padding-top: 29px;
+}
+
+#mobilebox {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mobilebox img {
+    height: 71px;
+}
+
+#mobileboxdes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+#section7 {
+    width: 33.33%;
+}
+
+#transportbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 29px;
+    height: 100px;
+}
+
+#transportbox img {
+    height: 71px;
+}
+
+#transportdes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+#button button {
+    height: 40px;
+    width: 180px;
+    position: relative;
+    top: 70px;
+    right: 240px;
+    color: white;
+    background-color: #4da528;
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+}
+
+#sunbox {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+#sunbox img{
+    height: 800px;
+    max-width: 100%;
+    width: 100%;
+}
+
+
+
+/* ================================icons======================= */
+
+
+/* Add responsive classes */
+@media (max-width: 768px) {
+    .responsive-container {
+        width: 100px;
+        height: 50px;
+    }
+
+    .responsive-container img {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .responsive-container {
+        width: 50px;
+        height: 25px;
+    }
+
+    .responsive-container img {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+#footer {
+    padding-left: 10%;
+    background-color: #000;
+    font-size: 20px;
+}
+
+#footer h3 {
+    font-size: 24px;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+/* Footer */
+#footer h3::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #6ba850;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+#footer h3:hover {
+    color: #4da528;
+    /* Changes text color on hover */
+}
+
+#footer h3:hover::after {
+    transform: scaleX(1);
+    /* Expands the underline */
+}
+
+.back-to-top {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    /* Green color */
+    color: #fff;
+    border: none;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Added box shadow */
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #218838;
+    /* Darker green on hover */
+}
+
+.back-to-top.show {
+    opacity: 1;
+}
+
+.back-to-top:before {
+    content: '\2191';
+    display: block;
+    font-size: 74px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .navbar-brand {
+        position: absolute;
+        left: 45%;
+        transform: translateX(-50%);
+    }
+
+    .navbar-brand img {
+        height: 80px;
+        max-height: 90%;
+        width: 100%;
+        max-width: 100%;
+        padding-top: 10%;
+    }
+
+    .nav-link1 {
+        padding-right: 0;
+    }
+
+    #footer {
+        padding-left: 10%;
+    }
+
+    #QL h3 {
+        padding-top: 5%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .nav-link1 {
+        padding-right: 0;
+    }
+
+    #footer {
+        padding-left: 10%;
+    }
+
+    #QL h3 {
+        padding-top: 5%;
+    }
+}
